@@ -49,6 +49,23 @@ namespace RazorPagesMovie.Models
 
                     new Movie
                     {
+                        Title = "Totoro",
+                        ReleaseDate = DateTime.Parse("1982-7-28"),
+                        Genre = "Anime",
+                        Price = 20.00M
+                    },
+
+
+                    new Movie
+                    {
+                        Title = "Dune",
+                        ReleaseDate = DateTime.Parse("1984-10-10"),
+                        Genre = "Sciene Fiction",
+                        Price = 30.00M
+                    },
+
+                    new Movie
+                    {
                         Title = "Rio Bravo",
                         ReleaseDate = DateTime.Parse("1959-4-15"),
                         Genre = "Western",
