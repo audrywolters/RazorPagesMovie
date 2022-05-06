@@ -28,7 +28,8 @@ namespace RazorPagesMovie.Models
                         Title = "When Harry Met Sally",
                         ReleaseDate = DateTime.Parse("1989-2-12"),
                         Genre = "Romantic Comedy",
-                        Price = 7.99M
+                        Price = 7.99M,
+                        Rating = "PG"
                     },
 
                     new Movie
@@ -36,7 +37,8 @@ namespace RazorPagesMovie.Models
                         Title = "Ghostbusters ",
                         ReleaseDate = DateTime.Parse("1984-3-13"),
                         Genre = "Comedy",
-                        Price = 8.99M
+                        Price = 8.99M,
+                        Rating = "PG"
                     },
 
                     new Movie
@@ -44,7 +46,8 @@ namespace RazorPagesMovie.Models
                         Title = "Ghostbusters 2",
                         ReleaseDate = DateTime.Parse("1986-2-23"),
                         Genre = "Comedy",
-                        Price = 9.99M
+                        Price = 9.99M,
+                        Rating = "PG"
                     },
 
                     new Movie
@@ -52,7 +55,8 @@ namespace RazorPagesMovie.Models
                         Title = "Totoro",
                         ReleaseDate = DateTime.Parse("1982-7-28"),
                         Genre = "Anime",
-                        Price = 20.00M
+                        Price = 20.00M,
+                        Rating = "G"
                     },
 
 
@@ -61,7 +65,8 @@ namespace RazorPagesMovie.Models
                         Title = "Dune",
                         ReleaseDate = DateTime.Parse("1984-10-10"),
                         Genre = "Science Fiction",
-                        Price = 30.00M
+                        Price = 30.00M,
+                        Rating = "R"
                     },
 
 
@@ -70,7 +75,8 @@ namespace RazorPagesMovie.Models
                         Title = "Total Recall",
                         ReleaseDate = DateTime.Parse("1992-02-10"),
                         Genre = "Science Fiction",
-                        Price = 30.00M
+                        Price = 30.00M,
+                        Rating = "R"
                     },
 
                     new Movie
@@ -78,7 +84,8 @@ namespace RazorPagesMovie.Models
                         Title = "Rio Bravo",
                         ReleaseDate = DateTime.Parse("1959-4-15"),
                         Genre = "Western",
-                        Price = 3.99M
+                        Price = 3.99M,
+                        Rating = "PG-13"
                     }
                 );
 
