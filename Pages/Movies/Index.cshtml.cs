@@ -31,14 +31,33 @@ namespace RazorPagesMovie.Pages.Movies
 
         public async Task OnGetAsync()
         {
-            var movies = from m in _context.Movie
+            // get all the movies
+            var movies = from m in _context.Movie 
                          select m;
 
+            // get all the genres
+            IQueryable<string> genreQuery = from m in _context.Movie
+                                            orderby m.Genre
+                                            select m.Genre;
+
+            // put genres into a select list for user to pick from
+            Genres = new SelectList(await genreQuery.Distinct().ToListAsync());
+
+            
             if (!string.IsNullOrEmpty(SearchString))
             {
+                // filter by what title user typed
                 movies = movies.Where(s => s.Title.Contains(SearchString));
             }
 
+
+            if (!string.IsNullOrEmpty(MovieGenre))
+            {
+                // filter list by genre
+                movies = movies.Where(x => x.Genre == MovieGenre);
+            }
+
+            // return filtered movies
             MovieList = await movies.ToListAsync();
         }
     }

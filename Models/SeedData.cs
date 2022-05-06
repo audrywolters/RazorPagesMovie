@@ -60,7 +60,16 @@ namespace RazorPagesMovie.Models
                     {
                         Title = "Dune",
                         ReleaseDate = DateTime.Parse("1984-10-10"),
-                        Genre = "Sciene Fiction",
+                        Genre = "Science Fiction",
+                        Price = 30.00M
+                    },
+
+
+                    new Movie
+                    {
+                        Title = "Total Recall",
+                        ReleaseDate = DateTime.Parse("1992-02-10"),
+                        Genre = "Science Fiction",
                         Price = 30.00M
                     },
 
